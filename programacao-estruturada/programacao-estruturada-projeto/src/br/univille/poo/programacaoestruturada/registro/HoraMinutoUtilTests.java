@@ -8,12 +8,11 @@ public class HoraMinutoUtilTests {
 	
 	@Test
 	public void acrescentaMinutos() {
-		HoraMinuto a = new HoraMinuto();
-		a.hora = 10;
-		a.minuto = 0;
-		HoraMinutoUtil.acrescentaMinutos(10);
-		
-		assertEquals("Hora e minutos sao iguais",10,a.minuto);
+		HoraMinuto h = new HoraMinuto();
+		h.hora = 10;
+		h.minuto = 0;
+		HoraMinutoUtil.acrescentaMinutos(h, 10);
+		assertEquals("Hora e minutos sao iguais",10,h.minuto);
 	}
 	
 
