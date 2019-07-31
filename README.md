@@ -2,6 +2,10 @@
 
 Materiais extras para a disciplina de Programação à Objetos para o bacharelado em Sistemas de Informação e Engenharia de Software
 
+## Programação Estruturada
+
+[projeto-programacao-estruturada](/programacao-estruturada/programacao-estruturada-projeto) Projeto Java para o exercícios de programação estruturada.
+
 ## Ferramentas
 
 [Eclipse 2019](https://www.eclipse.org/eclipseide/) - IDE gratuito para desenvolvimento com a linguagem Java.
