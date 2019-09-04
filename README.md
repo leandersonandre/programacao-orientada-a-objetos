@@ -11,7 +11,7 @@ Materiais extras para a disciplina de Programação à Objetos para o bacharelad
 
 ArrayList e HashMap
 
-[colecoes](/colecoes/colecoes-projeto) Projeto Java para o exercícios de coleções.
+[colecoes-projeto](/colecoes/colecoes-projeto) Projeto Java para o exercícios de coleções.
 
 ## Ferramentas
 
