@@ -6,6 +6,13 @@ Materiais extras para a disciplina de Programação à Objetos para o bacharelad
 
 [projeto-programacao-estruturada](/programacao-estruturada/programacao-estruturada-projeto) Projeto Java para o exercícios de programação estruturada.
 
+
+## Coleções
+
+ArrayList e HashMap
+
+[colecoes](/colecoes/colecoes-projeto) Projeto Java para o exercícios de coleções.
+
 ## Ferramentas
 
 [Eclipse 2019](https://www.eclipse.org/eclipseide/) - IDE gratuito para desenvolvimento com a linguagem Java.
