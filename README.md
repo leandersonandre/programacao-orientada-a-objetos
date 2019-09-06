@@ -6,12 +6,20 @@ Materiais extras para a disciplina de Programação à Objetos para o bacharelad
 
 [projeto-programacao-estruturada](/programacao-estruturada/programacao-estruturada-projeto) Projeto Java para o exercícios de programação estruturada.
 
+## Programação Orientada a Objetos
+
+### Herança
+
+[projeto-heranca](/programacao-orientada-objetos/heranca-projeto) Projeto Java para o exercícios sobre Herança.
+
 
 ## Coleções
 
 ArrayList e HashMap
 
 [colecoes-projeto](/colecoes/colecoes-projeto) Projeto Java para o exercícios de coleções.
+
+## JDBC
 
 ## Ferramentas
 
