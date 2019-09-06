@@ -15,26 +15,24 @@ public class HerancaTests {
 	public void fazerHeranca() {
 		Base base = HerancaExercicios.realizarHeranca();
 		
-		boolean realizouHeranca = !(base instanceof Base || base == null);
-		
-		assertEquals("Exercício 001 : Realizar uma herança da classe Base",
-				true,
-				realizouHeranca);
+		assertEquals("Exercicio 001 : Realizar uma heranca da classe Base",
+				"Filha",
+				base.getClass().getSimpleName());
 	}
 	
 	@Test
 	public void realizarSobreescritaDeMetodo() {
-		Base base = HerancaExercicios.realizarHeranca();
-		assertEquals("Exercício 002 : Realizar uma sobreescrita do método da classe Base",
+		Base base = HerancaExercicios.realizarSobreescritaDeMetodo();
+		assertEquals("Exercicio 002 : Realizar uma sobreescrita do metodo da classe Base",
 				base.metodo(),
 				"Classe Filha.java");
 	}
 	
 	@Test
 	public void realizarSobreescritaDeMetodo2() {
-		Base base = HerancaExercicios.realizarHeranca();
-		assertEquals("Exercício 003 : Realizar uma sobreescrita do método2 classe Base",
-				base.metodo(),
+		Base base = HerancaExercicios.realizarSobreescritaDeMetodo2();
+		assertEquals("Exercicio 003 : Realizar uma sobreescrita do metodo2 classe Base",
+				base.metodo2(),
 				"Metodo da classe Base.Metodo da classe Filha.");
 	}
 	
@@ -47,21 +45,20 @@ public class HerancaTests {
 		objects[3] = new Base();
 		objects[4] = new Base();
 		int quantidade = HerancaExercicios.identificarTipoDoObjeto(objects);
-		assertEquals("Exercício 004 : Realizar uma sobreescrita do método2 classe Base",
+		assertEquals("Exercicio 004 : Realizar uma sobreescrita do metodo2 classe Base",
 				3,
 				quantidade);
 	}
 	
 	@Test
 	public void fazerHerancaFinal() {
-		Base base = HerancaExercicios.realizarHeranca();
+		Base base = HerancaExercicios.fazerHerancaFinal();
 		
-		boolean realizouHeranca = !(base instanceof Base || base == null);
 		
-		assertEquals("Exercício 005 : Realizar uma herança da classe Base",
-				true,
-				realizouHeranca);
-		assertEquals("Exercício 005 : Marcou como classe final",
+		assertEquals("Exercicio 005 : Realizar uma heranca da classe Base",
+				"FilhaFinal",
+				base.getClass().getSimpleName());
+		assertEquals("Exercicio 005 : Marcou como classe final",
 				true,
 				Modifier.isFinal(base.getClass().getModifiers()));
 	}
@@ -78,7 +75,7 @@ public class HerancaTests {
 			  fail();
 		}
 		
-		assertEquals("Exercício 006 : Marcou como final o método",
+		assertEquals("Exercicio 006 : Marcou como final o metodo",
 				true,
 				metodoFinal);
 	}
