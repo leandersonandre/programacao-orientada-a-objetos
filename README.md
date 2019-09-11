@@ -21,7 +21,7 @@ ArrayList e HashMap
 
 ## JDBC
 
-API de conexão com bancos de dados. [Mais detalhes.](/jdbc.md)
+API de conexão com bancos de dados. [Mais detalhes.](/jdbc/jdbc.md)
 
 
 ## Ferramentas
