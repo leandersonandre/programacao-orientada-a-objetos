@@ -17,6 +17,6 @@ create table pessoa (
 String de conexão com MySql
 
 ```
-jdbc:mysql://localhost:3306/nome_banco
+jdbc:mysql://localhost:3306/nome_banco?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
 ```
 
