@@ -17,10 +17,10 @@ import javax.swing.event.ChangeListener;
 
 
 
-public class RadioButtonExemplo extends JFrame{
+public class UtilizacaoJRadioButton extends JFrame{
 	
 	
-	public RadioButtonExemplo() {
+	public UtilizacaoJRadioButton() {
 		super("Radio Button");
 		
 		setLayout(new BorderLayout());
@@ -81,7 +81,7 @@ public class RadioButtonExemplo extends JFrame{
 	}
 	
 	public static void main(String[] args) {
-		RadioButtonExemplo janela = new RadioButtonExemplo();
+		UtilizacaoJRadioButton janela = new UtilizacaoJRadioButton();
 		janela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		janela.setSize(400,200);
 		janela.setVisible(true);

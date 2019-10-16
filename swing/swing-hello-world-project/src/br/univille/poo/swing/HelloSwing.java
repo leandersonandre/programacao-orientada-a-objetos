@@ -6,6 +6,7 @@ import java.awt.event.ActionListener;
 
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
+import javax.swing.JCheckBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -60,7 +61,7 @@ public class HelloSwing extends JFrame{
 			}
 		});
 		
-		
+	
 		
 		panel.add(text);
 		panel.add(button);

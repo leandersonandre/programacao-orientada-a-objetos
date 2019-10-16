@@ -8,36 +8,25 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-public class FlowLayoutExemplo extends JFrame{
+public class EmptyLayoutExemplo extends JFrame{
 	
 	
     /**
      * FlowLayout adiciona componentes a esquerda
      */
-    public FlowLayoutExemplo()
+    public EmptyLayoutExemplo()
     {
-        super("FlowLayout");
+        super("Definicao de Layout Manual");
         
-        // Adiciona o gerenciador FlowLayout
-        // Orientacoes possiveis
-        // Centro   : FlowLayout.CENTER
-        // Esquerda : FlowLayout.LEFT
-        // Direita  : FlowLayout.RIGHT
-        setLayout( new FlowLayout(FlowLayout.RIGHT));
+        
+        setLayout( null);
         
         //Cria os paineis
-        JPanel norte = criarPanel(Color.RED,"Primeiro");
-        JPanel leste = criarPanel(Color.YELLOW,"Segundo");
-        JPanel oeste = criarPanel(Color.BLUE,"Terceiro");
-        JPanel sul = criarPanel(Color.WHITE,"Quarto");
-        JPanel centro = criarPanel(Color.GREEN,"Quinto");
+        JPanel painel = criarPanel(Color.RED,"Tamanho fixo");
+        painel.setBounds(10, 10, 100, 100);
         
         
-        add(norte);
-        add(sul);
-        add(leste);
-        add(oeste);
-        add(centro); 
+        add(painel);
     }
     
     
@@ -52,7 +41,7 @@ public class FlowLayoutExemplo extends JFrame{
     }
     
     public static void main(String[] args) {
-    	FlowLayoutExemplo border = new FlowLayoutExemplo();
+    	EmptyLayoutExemplo border = new EmptyLayoutExemplo();
         border.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         border.setSize(400,200);
         border.setVisible(true);

@@ -20,7 +20,7 @@ public class GridLayoutExemplo extends JFrame{
         super("GridLayout");
         
         // Adiciona o gerenciador GridLayout ( linhas, colunas ) 
-        setLayout( new GridLayout(3,2));
+        setLayout( new GridLayout(3,2, 10, 10));
         
         //Cria os paineis
         JPanel primeiro = criarPanel(Color.RED,"Primeiro");

@@ -17,7 +17,7 @@ public class BorderLayoutExemplo extends JFrame{
         super("BorderLayout");
         
         // Adiciona o gerenciador BorderLayout
-        setLayout( new BorderLayout());
+        setLayout( new BorderLayout(10,10));
         
         //Cria os paineis
         JPanel norte = criarPanel(Color.RED,"Norte");
