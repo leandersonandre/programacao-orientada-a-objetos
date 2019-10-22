@@ -1,8 +1,6 @@
 package br.univille.poo.swing.componentes;
 
-import java.awt.Color;
 import java.awt.Dimension;
-import java.awt.Font;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -10,12 +8,8 @@ import java.awt.event.ActionListener;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-import javax.swing.JPasswordField;
-import javax.swing.JTextField;
-import javax.swing.SwingConstants;
 
 public class UtilizacaoJButton {
 
@@ -35,6 +29,7 @@ public class UtilizacaoJButton {
 		JButton button = new JButton();
 		button.setText("Clique-me!");
 		button.setPreferredSize(tamanhoPreferido);
+		
 
 		ImageIcon icon = new ImageIcon("assets/imgs/alert.png");
 		Image image = icon.getImage().getScaledInstance(30, 20,Image.SCALE_DEFAULT);

@@ -2,7 +2,6 @@ package br.univille.poo.swing.gerenciadoresLayouts;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
-import java.awt.Dimension;
 
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -17,7 +16,7 @@ public class BorderLayoutExemplo extends JFrame{
         super("BorderLayout");
         
         // Adiciona o gerenciador BorderLayout
-        setLayout( new BorderLayout(10,10));
+        setLayout( new BorderLayout());
         
         //Cria os paineis
         JPanel norte = criarPanel(Color.RED,"Norte");

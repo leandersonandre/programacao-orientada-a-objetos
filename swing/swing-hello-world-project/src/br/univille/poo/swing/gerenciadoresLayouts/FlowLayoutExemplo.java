@@ -23,7 +23,7 @@ public class FlowLayoutExemplo extends JFrame{
         // Centro   : FlowLayout.CENTER
         // Esquerda : FlowLayout.LEFT
         // Direita  : FlowLayout.RIGHT
-        setLayout( new FlowLayout(FlowLayout.RIGHT));
+        setLayout( new FlowLayout(FlowLayout.LEFT));
         
         //Cria os paineis
         JPanel norte = criarPanel(Color.RED,"Primeiro");

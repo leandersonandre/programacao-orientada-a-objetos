@@ -2,7 +2,6 @@ package br.univille.poo.swing.gerenciadoresLayouts;
 
 import java.awt.Color;
 import java.awt.Dimension;
-import java.awt.FlowLayout;
 import java.awt.GridLayout;
 
 import javax.swing.JFrame;
@@ -20,7 +19,7 @@ public class GridLayoutExemplo extends JFrame{
         super("GridLayout");
         
         // Adiciona o gerenciador GridLayout ( linhas, colunas ) 
-        setLayout( new GridLayout(3,2, 10, 10));
+        setLayout( new GridLayout(3,2));
         
         //Cria os paineis
         JPanel primeiro = criarPanel(Color.RED,"Primeiro");

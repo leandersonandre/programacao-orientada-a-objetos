@@ -6,7 +6,6 @@ import java.awt.Dimension;
 import javax.swing.BorderFactory;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-import javax.swing.border.Border;
 
 public class PainelComBordas {
 
@@ -19,7 +18,7 @@ public class PainelComBordas {
 		
 		JPanel painel = new JPanel();
 		// Borda sem linha, funciona como margens
-		painel.setBorder(BorderFactory.createEmptyBorder(10,10,10,10));
+		painel.setBorder(BorderFactory.createEmptyBorder(30,30,30,30));
 		
 		JPanel bordaSimples = new JPanel();
 		bordaSimples.setBorder(BorderFactory.createLineBorder(Color.BLACK, 2));

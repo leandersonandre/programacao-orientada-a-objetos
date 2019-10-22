@@ -2,7 +2,6 @@ package br.univille.poo.swing.gerenciadoresLayouts;
 
 import java.awt.Color;
 import java.awt.Dimension;
-import java.awt.FlowLayout;
 
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -23,7 +22,7 @@ public class EmptyLayoutExemplo extends JFrame{
         
         //Cria os paineis
         JPanel painel = criarPanel(Color.RED,"Tamanho fixo");
-        painel.setBounds(10, 10, 100, 100);
+        painel.setBounds(10, 10, 140, 100);
         
         
         add(painel);
