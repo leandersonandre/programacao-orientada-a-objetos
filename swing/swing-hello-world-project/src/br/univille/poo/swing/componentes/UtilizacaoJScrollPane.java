@@ -1,53 +1,41 @@
 package br.univille.poo.swing.componentes;
 
-import java.awt.Color;
 import java.awt.Dimension;
 
-import javax.swing.ImageIcon;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.JTabbedPane;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
 
 public class UtilizacaoJScrollPane {
 
 	public static void main(String[] args) {
 		JFrame frame = new JFrame();
 		frame.setTitle("Nova Janela");
-		frame.setSize(600,600);
+		frame.setSize(200,200);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
+
+		Dimension tamanhoPreferido = new Dimension(300,300);
 	
 		
-		JTabbedPane tabPane = new JTabbedPane();
-		ImageIcon icon = new ImageIcon("assets/imgs/icone_folder.png");
+		JPanel painel = new JPanel();
 		
-		Color colors[] = {Color.WHITE,Color.BLUE
-				,Color.DARK_GRAY,Color.YELLOW,Color.MAGENTA};
 		
-		for(int i = 0; i < 5; i ++) {
-			tabPane.addTab("Tab "+i, icon, criarPanel(colors[i],"Tab "+i),
-                "Hint do Tab "+i);
-		}
 		
+		JTextArea textArea = new JTextArea(14,14);
+		textArea.setPreferredSize(tamanhoPreferido);
+		
+		JScrollPane scroll = new JScrollPane(textArea);
+		painel.add(scroll);
 		
 		// Adiciona o painel na janela
-		frame.add(tabPane);
+		frame.add(painel);
 		frame.pack();
 		
 		frame.show();
 
 	}
-	
-	// Cria um painel com a cor de fundo e um label
-    private static JPanel criarPanel(Color color, String texto) {
-    	JPanel panel = new JPanel();
-    	panel.setBackground(color);
-    	panel.add(new JLabel(texto));
-    	panel.setPreferredSize(new Dimension(600, 600));
-    	// Configura um tamanho padrao do painel
-    	return panel;
-    }
 	
 
 }
