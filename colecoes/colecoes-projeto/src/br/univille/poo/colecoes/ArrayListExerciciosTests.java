@@ -43,7 +43,7 @@ public class ArrayListExerciciosTests {
 	public void removerElementos() {
 		ArrayList<Integer> lista = ArrayListExercicios.removerElementos(Arrays.asList(1,2,3,4));
 		assertEquals("Exer 004 : Listas devem ser iguais. "
-				, Arrays.asList(1,4,3,4)
+				, Arrays.asList(1,3,4)
 				, lista);
 	}
 	
